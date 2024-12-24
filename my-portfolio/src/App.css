@@ -1,4 +1,80 @@
-.App {
+html { 
+  background-color: black;
+  scroll-behavior: smooth;
+}
+
+button {
+  background-color: rgb(171, 171, 171);
+  transition: background-color ease 0.5s;
+}
+
+button:hover {
+  background-color: #fff;
+}
+
+a {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  margin: 25px;
+  transition: font-size 0.5s ease, color 0.5s ease;
+  text-decoration: none;
+}
+
+a:hover { 
+  color: #91bbec;
+  font-size: 1.1em;
+}
+
+ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 5vh;
+  top: 0;
+  background-color: rgb(58, 58, 58);
+}
+
+.img-cont {
+  display: flex;
+  overflow: hidden;
+  background-color: white;
+  width: 900px;
+  height: 400px;
+  margin-left: 20%;
+  padding: 0;
+  transition: swipe 0.5s ease-in-out;
+}
+img {
+  width: 900px;
+  height: 400px;
+}
+
+@keyframes swipe {
+  from {
+    transfrom: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+footer {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  background-color: gray;
+  height: 30px;
+  width: 100%;
+}
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +111,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
